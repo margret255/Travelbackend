@@ -323,12 +323,70 @@ header::before {
 .journey__card__content p{
     color: var(--extra-light);
 }
+.showcase__container{
+    display: grid;
+    gap: 2rem;
+    overflow: hidden;
+}
+.showcase__img{
+    max-width: 400px;
+    margin-inline:auto ;
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
+}
+.showcase__content h4{
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+.showcase__content p{
+    margin-bottom: 1rem;
+    color: var(--text-light);
+}
+.showcase__content .btn{
+    width: 100%;
+    margin-top: 2rem;
+    padding: 1.5rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    background-image: url(assets/2.jpeg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+}
+.banner__container{
+    display: grid;
+    gap: 2rem;
+}
+.banner__card{
+    padding: 2rem 1rem;
+    text-align: center;
+    background-color: var(--extra-light);
+    border-radius: 2rem;
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.1);
+
+}
+.banner__card h4{
+    font-size: 5rem;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+.banner__card p{
+
+    color: var(--text-light);
+
+}
 @media(width >540px){
     .destination__grid{
         grid-template-columns: repeat(2,1fr);
     }
     .journey__grid{
         grid-template-columns: repeat(2,1fr);
+    }
+    .showcase__container{
+        grid-template-columns: repeat(2,1fr);
+        align-items: center;
     }
 }
 
@@ -431,4 +489,14 @@ header::before {
     .journey__grid{
         grid-template-columns: repeat(3,1fr);
     }
+    .showcase__container{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .showcase__content{
+        grid-column: 2/4;
+    }
+    .banner__container{
+        grid-template-columns: repeat(3,1fr);
+    }
+    
 }

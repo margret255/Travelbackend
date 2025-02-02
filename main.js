@@ -37,7 +37,28 @@ scrollReveal().reveal(".header__btns", {
     ...scrollRevealOption,
     delay: 1500,
 });
+
 scrollReveal().reveal(".destination__card", {
+    ...scrollRevealOption,
+    interval:500,
+});
+scrollReveal().reveal(".showcase__image img", {
+    ...scrollRevealOption,
+    origin: "right"
+});
+scrollReveal().reveal(".showcase__content h4", {
+    ...scrollRevealOption,
+    delay: 500,
+});
+scrollReveal().reveal(".showcase__content  p", {
+    ...scrollRevealOption,
+    delay: 1000,
+});
+scrollReveal().reveal(".showcase__btn", {
+    ...scrollRevealOption,
+    delay: 1500,
+});
+scrollReveal().reveal(".banner__card", {
     ...scrollRevealOption,
     interval:500,
 });
