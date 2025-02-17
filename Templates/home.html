@@ -1,10 +1,11 @@
+ {% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="{% static 'main.css' %}">
     <title>Travel Website</title>
 </head>
 <body>
@@ -55,7 +56,7 @@
         </p>
         <div class="destination__grid">
             <div class="destination__card">
-                <img src="assets/des1.jpeg" alt="destination"/>
+                <img src="{% static 'assets/des1.jpeg' %}" alt="destination"/>
                 <div class="destination__card__details">
                     <div>
                         <h4>France</h4>
@@ -68,7 +69,7 @@
                 </div>
             </div>
             <div class="destination__card">
-                <img src="assets/des2.jpeg" alt="destination"/>
+                <img src="{% static 'assets/des2.jpeg' %}" alt="destination"/>
                 <div class="destination__card__details">
                     <div>
                         <h4>Kenya</h4>
@@ -81,7 +82,7 @@
                 </div>
             </div>
             <div class="destination__card">
-                <img src="assets/des3.jpeg" alt="destination"/>
+                <img src="{% static 'assets/des3.jpeg' %}" alt="destination"/>
                 <div class="destination__card__details">
                     <div>
                         <h4>Israel</h4>
@@ -94,7 +95,7 @@
                 </div>
             </div>
             <div class="destination__card">
-                <img src="assets/q.jpeg" alt="destination"/>
+                    <img src="{% static 'assets/q.jpeg"'%} alt="destination"/>
                 <div class="destination__card__details">
                     <div>
                         <h4>Germany</h4>
@@ -107,7 +108,7 @@
                 </div>
             </div>
             <div class="destination__card">
-                <img src="assets/des7.jpeg" alt="destination"/>
+                <img src="{% static 'assets/des7.jpeg' %}" alt="destination"/>
                 <div class="destination__card__details">
                     <div>
                         <h4>Mauritius</h4>
@@ -120,7 +121,7 @@
                 </div>
             </div>
             <div class="destination__card">
-                <img src="assets/des6.jpeg" alt="destination"/>
+                <img src="{%static 'assets/des6.jpeg' %}" alt="destination"/>
                 <div class="destination__card__details">
                     <div>
                         <h4>United KIngdom</h4>
@@ -179,7 +180,7 @@
     
     <section class="section__container showcase__container" id="package">
         <div class="showcase__image">
-            <img src="assets/2.jpeg" alt="showcase">
+            <img src="{%static 'assets/2.jpeg' %}" alt="showcase">
         </div>
       <div class="showcase__content">
         <h4>UNLEASH YOUR LUST WITH TARGET  AIRWAYS</h4>
@@ -249,7 +250,7 @@
 
             </div>
             <div class="client_details">
-                <img src="assets/a.jpeg" alt="">
+                <img src="{%static 'assets/a.jpeg' %}" alt="">
                 <div>
                     <h4>John Adrey</h4>
                     <h5>Jasmine Adey</h5>
@@ -271,7 +272,7 @@
 
             </div>
             <div class="client_details">
-                <img src="assets/b.jpeg" alt="">
+                <img src="{%static 'assets/b.jpeg' %}" alt="">
                 <div>
                     <h4>John Adrey</h4>
                     <h5>Jasmine Adey</h5>
@@ -293,7 +294,7 @@
 
             </div>
             <div class="client_details">
-                <img src="assets/c.jpeg" alt="">
+                <img src="{%static 'assets/c.jpeg' %}" alt="">
                 <div>
                     <h4>John Adrey</h4>
                     <h5>Jasmine Adey</h5>
@@ -315,7 +316,7 @@
 
             </div>
             <div class="client_details">
-                <img src="assets/d.jpeg" alt="">
+                <img src="{%static 'assets/d.jpeg' %}" alt="">
                 <div>
                     <h4>John Adrey</h4>
                     <h5>Jasmine Adey</h5>
@@ -381,6 +382,6 @@
 
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="main.js"></script>
+    <script src="{%static 'main.js' %}"></script>
 </body>
 </html>
